@@ -9,369 +9,825 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
-    <div class="overlay"></div>
-    <header>
-        <a href="#" class="logo"><span>H</span>ugo</a>
-        <ul class="navlist">
-            <li><a href="#home" class="active">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#services">Expérience</a></li>
-            <li><a href="#portfolio">Projets</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="right-header">
-            <div class="menu-icon">
-                <div class="bar"></div>
-            </div>
-        </div>
-    </header>
-
-    <section class="home" id="home">
-        <div class="hero-info">
-            <h3>Bienvenue dans mon monde</h3>
-            <h1>Bonjour, je suis Hugo !</h1>
-
-            <div class="text-animate">
-                <h2>Développeur Front</h2>
-            </div>
-
-            <p>Alternant chez Prium Solutions. Étudiant en Licence Pro Développement Web et Mobile à l'IUT de Bobigny</p>
-
-            <div class="btn-box">
-                <a href="mailto:hugo.andre1501@gmail.com" class="btn">Contact<i class='bx bx-right-arrow-alt' ></i></a>
-                <a href="img/CV_Hugo_Andre.pdf" target="_blank" class="btn d-CV">Télécharger CV <i class='bx bx-download'></i></a>
-            </div>
-
-            <div class="social-media">
-                <div class="bg-icon">
-                    <a href="https://www.instagram.com/hugo_andre15/#"><i class='bx bxl-instagram'></i></a>
-                    <span></span>
-                </div>
-
-                <div class="bg-icon">
-                    <a href="https://github.com/HugoAndre15"><i class='bx bxl-github'></i></a>
-                    <span></span>
-                </div>
-
-                <div class="bg-icon">
-                    <a target="_blank" href="https://www.linkedin.com/in/hugo-andré-54551b206/"><i class='bx bxl-linkedin'></i></a>
-                    <span></span>
+    <div class="overlay"></div>    <header>
+        <div class="container">
+            <a href="#" class="logo"><span>H</span>ugo</a>
+            <ul class="navlist">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#services">Expérience</a></li>
+                <li><a href="#portfolio">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="right-header">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class='bx bx-moon'></i>
+                </button>
+                <div class="menu-icon">
+                    <div class="bar"></div>
                 </div>
             </div>
         </div>
-        <div class="img-hero">
-            <img src="img/hero.jpg" alt="">
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/aboutMe.jpg" alt="" class="aboutHero">
-            <div class="showcase-ring">
-                <img src="shapes/ring.png" class="ring">
-                <img src="shapes/circle.png" class="circle">
-            </div>
-        </div>
-        <div class="about-content">
-            <h2 class="heading">A propos</h2>
-            <h3>2 années d'expérience en alternance</h3>
-            <p>J'ai fait deux années d'études en DUT Informatique au sein de l'IUT de Villetaneuse. Lors de la deuxième année j'ai effectué une alternance au sein de l'entreprise Horizon SI. Suite à cela j'ai fait une licence pro au sein de l'IUT de Bobigny et suis une alternance chez Prium Solutions. J'enchaîne l'année prochaine avec un Master Ingénieurie du Web à l'ESGI en continuant mon alternance avec Prium Solutions.</p>
-           
-            <div class="content-btn">
-                <div class="content">
-                    <div class="text-box">
-                    <p>DUT Informatique - IUT de Villetaneuse</p>
-                    <span>Horizon SI</span>
+    </header><section class="home" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">👋 Bienvenue sur mon portfolio</span>
                 </div>
-                <div class="text-box">
-                    <p>Licence Pro Dévelopement Web et Mobile - IUT de Bobigny</p>
-                    <span>Prium Solutions</span>
+                
+                <h1 class="hero-title">
+                    Salut, je suis <span class="highlight">Hugo André</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span class="typing-text">Développeur Full Stack</span>
+                    <span class="cursor">|</span>
                 </div>
-                <div class="text-box">
-                    <p>Master Ingénieurie du web - ESGI</p>
-                    <span>Prium Solutions</span>
-                </div>
-                </div>
-            </div>
-            <div class="cvContent">
-                <a href="img/CV_Hugo_Andre.pdf" target="_blank" class="btn d-CV">Télécharger CV <i class='bx bx-download'></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2 class="heading">Mes Expériences</h2>
-            <span>mes expériences professionnel</span>
-        </div>
-
-        <div class="allServices">
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-layer' ></i>
-                    <span></span>
-                </div>
-                <h3>Prium Solutions</h3>
-                <p>J'y effectue actuellement mon alternance de Licence PRO. J'y apprend beaucoup sur le web et le développement en équipe. J'y apprend aussi beaucoup pour la communication et les méthodes SCRUM.</p>
-                <a href="https://prium-portage.com" target="_blank" class="readMore">En savoir plus</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-code-alt' ></i>
-                    <span></span>
-                </div>
-                <h3>Horizon SI</h3>
-                <p>J'y ai effectué mon alternance de seconde année de DUT. J'y ai appris beaucoup sur le réseau et les architectures. J'ai également vu beaucoup à propos de la communication et du travail travail d'équipe.</p>
-                <a href="https://www.horizon-si.fr" target="_blank" class="readMore">En savoir plus</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-desktop' ></i>
-                    <span></span>
-                </div>
-
-                <h3>Stage de découverte à la SNCF</h3>
-                <p>J'ai effectué mon stage de découverte d'entreprise à la SNCF en 2016. J'ai pu découvrir l'organisation d'une grande entreprise, y découvrir de nombreux métiers et des codes de l'entreprise, comme les réunions, les diffénrents outils ou bien le langage utilisé.</p>
-                <a href="https://www.sncf.com/fr" target="_blank" class="readMore">En savoir plus</a>
-            </div>
-
-        </div>
-
-        <div class="showcase">
-            <img src="shapes/ring.png" class="ring">
-            <img src="shapes/circle.png" class="circle">
-            <img src="shapes/circle.png" class="circle2">
-            <img src="shapes/circle.png" class="circle3">
-            <img src="shapes/half-ring.png" class="half-ring">
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2 class="heading">Mes Projets</h2>
-            <span>ce que j'ai déjà réalisé</span>
-        </div>
-        <div class="fillter-buttons">
-            <button class="button mixitup-control-active" data-filter="all">Tout</button>
-            <button class="button" data-filter=".web">Développement Web</button>
-            <button class="button" data-filter=".app">Application</button>
-        </div>
-
-        <div class="portfolio-gallery">
-            <div class="portfolio-box mix app">
-                <div class="portfolio-content">
-                    <h3>Ecommerce en flutter</h3>
-                    <p>Projet réalisé en cours de Flutter, en Licence pro.</p>
-                    <a href="https://github.com/HugoAndre15/Ecommerce-flutter" target="_blank" class="readMore">Explorer plus</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/1.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Projet Chat NodeJS</h3>
-                    <p>Projet réalisé en Licence afin d'apprendre le langage NodeJS.</p>
-                    <a href="https://github.com/HugoAndre15/NodeJS-chat" target="_blank" class="readMore">Explorer plus</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/2.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Site E-Billeterie</h3>
-                    <p>Site réalisé en terminal, en groupe. HTML/CSS/PHP</p>
-                    <a href="https://github.com/HugoAndre15/E-Billetterie" class="readMore">Explorer plus</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/3.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Site Escape Game - Web</h3>
-                    <p>Site réalisé en groupe en première année de DUT. HTML/CSS</p>
-                    <a href="https://github.com/HugoAndre15/Escape_Game" class="readMore">Explorer plus</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/4.jpg" alt="">
-                </div>
-            </div>
-    
-            <div class="portfolio-box mix app">
-                <div class="portfolio-content">
-                    <h3>Projet PopLive</h3>
-                    <p>Projet de groupe en licence sur une application en React Native</p>
-                    <a href="https://github.com/caro553/poplive" target="_blank" class="readMore">Explorer plus</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/5.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="down-box" id="skills">
-        <div class="contactSkills">
-            <div class="skills">
-                <div class="container">
-                    <div class="skillBox">
-                        <div class="main-text">
-                            <h2 class="heading">Mes Compétences</h2>
-                            <span>Laissez-moi vous aider</span>
-                        </div>
-                        <div class="skill-wrap">
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                    </svg>
-                                    <h2 class="counter">
-                                        <span data-target="90">0</span>%
-                                    </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    HTML
-                                </div>
-                            </div>
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                    </svg>
-                                    <h2 class="counter">
-                                        <span data-target="80">0</span>%
-                                    </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    CSS
-                                </div>
-                            </div>
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                    </svg>
-                                    <h2 class="counter">
-                                        <span data-target="56">0</span>%
-                                    </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    JavaScript
-                                </div>
-                            </div>
-
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                    </svg>
-                                    <h2 class="counter">
-                                        <span data-target="60">0</span>%
-                                    </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    PHP
-                                </div>
-                            </div>
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                    </svg>
-                                    <h2 class="counter">
-                                        <span data-target="90">0</span>%
-                                    </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    UX/UI
-                                </div>
-                            </div>
-                        </div>
+                
+                <p class="hero-description">
+                    Étudiant en Master Ingénierie du Web à l'ESGI et alternant chez Prium Solutions. 
+                    Je conçois et développe des applications web modernes avec une approche centrée utilisateur.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Technologies maîtrisées</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="down-box" id="contact">
-        <div class="contactSkills">
-            <div class="contact-info">
-                <div class="main-text">
-                    <h2 class="heading">Contactez-moi</h2>
-                    <span>prenez contact avec moi</span>
+                
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">
+                        <span>Voir mes projets</span>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <a href="img/CV_Hugo_Andre.pdf" target="_blank" class="btn-secondary">
+                        <i class='bx bx-download'></i>
+                        <span>Télécharger CV</span>
+                    </a>
                 </div>
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Prénom">
-                        <input type="text" placeholder="Nom">
+                
+                <div class="hero-social">
+                    <div class="social-link">
+                        <a href="https://github.com/HugoAndre15" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
                     </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Sujet">
-                    <textarea name="#" id="" cols="30" rows="10">
-                    </textarea>
-                    <div class="formBtn">
-                        <button type="submit" class="btn"><a class="btn" href="mailto:hugo.andre1501@gmail.com">Envoyer le message</a></button>
+                    <div class="social-link">
+                        <a href="https://www.linkedin.com/in/hugo-andré-54551b206/" target="_blank">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
                     </div>
-                </form>
+                    <div class="social-link">
+                        <a href="https://www.instagram.com/hugo_andre15/" target="_blank">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="mailto:hugo.andre1501@gmail.com">
+                            <i class='bx bx-envelope'></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="floating-elements">
+                        <div class="floating-card tech-card">
+                            <i class='bx bxl-react'></i>
+                            <span>React</span>
+                        </div>
+                        <div class="floating-card tech-card">
+                            <i class='bx bxl-nodejs'></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="floating-card tech-card">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/hero.jpg" alt="Hugo André" />
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <p>Droit d'auteur © 2023 par <span>André Hugo</span> || Tous droits réservés.</p>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Découvrez mon parcours</span>
+        </div>
+    </section>    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>👨‍💻 À propos de moi</span>
+                </div>
+                <h2 class="section-title">Développeur passionné par l'innovation</h2>
+                <p class="section-subtitle">
+                    Découvrez mon parcours, mes compétences et ma vision du développement web moderne
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Mon histoire</h3>
+                        <p>
+                            Passionné par le développement web depuis mes débuts en DUT Informatique, 
+                            j'ai rapidement orienté ma carrière vers les technologies modernes. 
+                            Mon parcours m'a permis d'acquérir une expertise complète, du front-end au back-end.
+                        </p>
+                        <p>
+                            Actuellement en Master à l'ESGI et alternant chez Prium Solutions, 
+                            je continue à approfondir mes compétences tout en contribuant à des projets concrets 
+                            qui impactent positivement les utilisateurs.
+                        </p>
+                    </div>
+                    
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2024-2025</span>
+                                <h4>Master Ingénierie du Web</h4>
+                                <p>ESGI • Prium Solutions</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2023-2024</span>
+                                <h4>Licence Pro Développement Web</h4>
+                                <p>IUT de Bobigny • Prium Solutions</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2021-2023</span>
+                                <h4>DUT Informatique</h4>
+                                <p>IUT de Villetaneuse • Horizon SI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <img src="img/aboutMe.jpg" alt="Hugo André" class="about-image" />
+                        <div class="about-decoration">
+                            <div class="decoration-circle"></div>
+                            <div class="decoration-dots"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-facts">
+                        <div class="fact-item">
+                            <i class='bx bx-code-alt'></i>
+                            <span>Clean Code</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class='bx bx-mobile-alt'></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class='bx bx-rocket'></i>
+                            <span>Performance</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class='bx bx-group'></i>
+                            <span>Travail d'équipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>💼 Mon parcours</span>
+                </div>
+                <h2 class="section-title">Expériences professionnelles</h2>
+                <p class="section-subtitle">
+                    Découvrez les entreprises qui ont contribué à forger mon expertise
+                </p>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card featured">
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <i class='bx bx-layer'></i>
+                        </div>
+                        <div class="experience-meta">
+                            <h3>Prium Solutions</h3>
+                            <span class="position">Développeur Full Stack - Alternant</span>
+                            <span class="period">2023 - Présent</span>
+                        </div>
+                        <div class="experience-status">
+                            <span class="status-badge current">Actuel</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>
+                            Développement d'applications web modernes en équipe agile. 
+                            Maîtrise des méthodologies SCRUM, amélioration continue des compétences 
+                            techniques et développement de soft skills essentiels.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">SCRUM</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="experience-footer">
+                        <a href="https://prium-portage.com" target="_blank" class="experience-link">
+                            Découvrir l'entreprise <i class='bx bx-external-link'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <i class='bx bx-code-alt'></i>
+                        </div>
+                        <div class="experience-meta">
+                            <h3>Horizon SI</h3>
+                            <span class="position">Développeur - Alternant</span>
+                            <span class="period">2022 - 2023</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>
+                            Initiation aux infrastructures réseau et architectures système. 
+                            Développement de compétences en communication et collaboration 
+                            au sein d'équipes techniques multidisciplinaires.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Réseau</span>
+                            <span class="skill-tag">Architecture</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                    <div class="experience-footer">
+                        <a href="https://www.horizon-si.fr" target="_blank" class="experience-link">
+                            Découvrir l'entreprise <i class='bx bx-external-link'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <i class='bx bx-train'></i>
+                        </div>
+                        <div class="experience-meta">
+                            <h3>SNCF</h3>
+                            <span class="position">Stage de découverte</span>
+                            <span class="period">2016</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p>
+                            Première immersion en entreprise découvrant l'organisation 
+                            d'une grande structure, ses métiers et ses méthodes de travail. 
+                            Éveil à la culture d'entreprise et aux codes professionnels.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Découverte</span>
+                            <span class="skill-tag">Organisation</span>
+                        </div>
+                    </div>
+                    <div class="experience-footer">
+                        <a href="https://www.sncf.com/fr" target="_blank" class="experience-link">
+                            Découvrir l'entreprise <i class='bx bx-external-link'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>🚀 Portfolio</span>
+                </div>
+                <h2 class="section-title">Projets réalisés</h2>
+                <p class="section-subtitle">
+                    Une sélection de mes réalisations les plus significatives
+                </p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <span>Tous les projets</span>
+                </button>
+                <button class="filter-btn" data-filter=".web">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Web</span>
+                </button>
+                <button class="filter-btn" data-filter=".app">
+                    <i class='bx bx-mobile-alt'></i>
+                    <span>Applications</span>
+                </button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item mix app">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/portfolio/1.jpg" alt="Ecommerce Flutter" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/HugoAndre15/Ecommerce-flutter" target="_blank" class="action-btn">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                    <a href="#" class="action-btn">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="category-tag mobile">Mobile</span>
+                            </div>
+                            <h3 class="project-title">E-commerce Flutter</h3>
+                            <p class="project-description">
+                                Application mobile e-commerce développée avec Flutter. Interface utilisateur moderne 
+                                avec gestion de panier, authentification et paiement sécurisé.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item mix web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/portfolio/2.jpg" alt="Chat NodeJS" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/HugoAndre15/NodeJS-chat" target="_blank" class="action-btn">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                    <a href="#" class="action-btn">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="category-tag web">Web</span>
+                            </div>
+                            <h3 class="project-title">Chat en temps réel</h3>
+                            <p class="project-description">
+                                Application de chat en temps réel utilisant Socket.io. Interface moderne 
+                                avec notifications, statuts en ligne et historique des conversations.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item mix web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/portfolio/3.jpg" alt="E-Billeterie" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/HugoAndre15/E-Billetterie" target="_blank" class="action-btn">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="category-tag web">Web</span>
+                            </div>
+                            <h3 class="project-title">Plateforme E-Billeterie</h3>
+                            <p class="project-description">
+                                Système complet de billetterie en ligne avec gestion des événements, 
+                                réservations et paiements. Projet réalisé en équipe.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item mix web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/portfolio/4.jpg" alt="Escape Game" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/HugoAndre15/Escape_Game" target="_blank" class="action-btn">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="category-tag web">Web</span>
+                            </div>
+                            <h3 class="project-title">Site Escape Game</h3>
+                            <p class="project-description">
+                                Site web vitrine pour un escape game avec présentation des salles, 
+                                système de réservation et interface d'administration.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item mix app">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/portfolio/5.jpg" alt="PopLive" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/caro553/poplive" target="_blank" class="action-btn">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="category-tag mobile">Mobile</span>
+                            </div>
+                            <h3 class="project-title">PopLive</h3>
+                            <p class="project-description">
+                                Application mobile collaborative développée en équipe avec React Native. 
+                                Plateforme sociale avec fonctionnalités de streaming et interaction en temps réel.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>⚡ Compétences</span>
+                </div>
+                <h2 class="section-title">Technologies maîtrisées</h2>
+                <p class="section-subtitle">
+                    Un aperçu de mon expertise technique et des outils que j'utilise au quotidien
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class='bx bx-code-alt'></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-html5'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-javascript'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Avancé</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-react'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-level">Avancé</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class='bx bx-server'></i>
+                        Backend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-nodejs'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">Avancé</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-python'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">Avancé</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bx-data'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Bases de données</span>
+                                    <span class="skill-level">Intermédiaire</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class='bx bx-mobile-alt'></i>
+                        Mobile
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-flutter'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Flutter</span>
+                                    <span class="skill-level">Intermédiaire</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-react'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">React Native</span>
+                                    <span class="skill-level">Intermédiaire</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class='bx bx-cog'></i>
+                        Outils & Autres
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bxl-git'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-level">Avancé</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class='bx bx-group'></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Méthodes Agiles</span>
+                                    <span class="skill-level">Avancé</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>📧 Contact</span>
+                </div>
+                <h2 class="section-title">Travaillons ensemble</h2>
+                <p class="section-subtitle">
+                    Une idée de projet ? Une opportunité ? N'hésitez pas à me contacter !
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>hugo.andre1501@gmail.com</p>
+                                <a href="mailto:hugo.andre1501@gmail.com" class="method-link">
+                                    Envoyer un email <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class='bx bxl-linkedin'></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>LinkedIn</h4>
+                                <p>Connectons-nous professionnellement</p>
+                                <a href="https://www.linkedin.com/in/hugo-andré-54551b206/" target="_blank" class="method-link">
+                                    Voir le profil <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class='bx bxl-github'></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>GitHub</h4>
+                                <p>Découvrez mes projets open source</p>
+                                <a href="https://github.com/HugoAndre15" target="_blank" class="method-link">
+                                    Voir les projets <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="mailto:hugo.andre1501@gmail.com" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Envoyer le message</span>
+                            <i class='bx bx-send'></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Hugo André</h3>
+                    <p>Développeur Full Stack passionné par l'innovation et les technologies modernes.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#services">Expérience</a></li>
+                            <li><a href="#portfolio">Projets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:hugo.andre1501@gmail.com">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/hugo-andré-54551b206/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/HugoAndre15" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hugo André. Tous droits réservés.</p>
+                <p>Développé avec 💙 et beaucoup de café ☕</p>
+            </div>
+        </div>
     </footer>
 
     <div id="progress">
