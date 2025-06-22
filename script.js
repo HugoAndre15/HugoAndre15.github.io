@@ -54,10 +54,9 @@ themeToggle.addEventListener("click", () => {
 });
 
 // portfolio filter
-
-var mixer = mixitup(".portfolio-gallery", {
+var mixer = mixitup(".portfolio-grid", {
   selectors: {
-    target: ".portfolio-box",
+    target: ".portfolio-item",
   },
   animation: {
     duration: 500,
@@ -159,7 +158,7 @@ let calcScrollValue = () => {
     document.documentElement.scrollTop = 0;
   });
 
-  scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(#4facfe ${scrollValue}%, rgba(79, 172, 254, 0.2) ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;

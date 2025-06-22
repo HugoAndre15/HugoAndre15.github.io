@@ -490,20 +490,40 @@ header .container {
 
 .floating-card {
     position: absolute;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background: linear-gradient(135deg, var(--card-bg), rgba(79, 172, 254, 0.1));
+    border: 1px solid var(--accent-primary);
     border-radius: 15px;
     padding: 1rem;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px var(--shadow-light);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px var(--shadow-medium), 0 0 20px rgba(79, 172, 254, 0.2);
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: var(--accent-primary);
+    transition: var(--transition);
+    cursor: pointer;
 }
 
+.floating-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, var(--accent-primary), rgba(79, 172, 254, 0.2));
+    color: white;
+    box-shadow: 0 15px 45px var(--shadow-heavy), 0 0 30px rgba(79, 172, 254, 0.4);
+    border-color: var(--accent-secondary);
+}
+
+.floating-card i {
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.floating-card:hover i {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Enhanced floating cards positioning */
 .tech-card:nth-child(1) {
     top: 10%;
     left: -10%;
@@ -517,35 +537,42 @@ header .container {
 }
 
 .tech-card:nth-child(3) {
-    bottom: 10%;
+    bottom: 15%;
     left: -5%;
     animation: float 6s ease-in-out infinite 4s;
 }
 
-.tech-card i {
-    font-size: 1.5rem;
-    color: var(--accent-primary);
+.tech-card:nth-child(4) {
+    top: 60%;
+    right: -20%;
+    animation: floatReverse 5s ease-in-out infinite 1s;
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
+.tech-card:nth-child(5) {
+    bottom: 40%;
+    left: -15%;
+    animation: floatReverse 5.5s ease-in-out infinite 3s;
+}
+
+.tech-card:nth-child(6) {
+    top: 80%;
+    right: -10%;
+    animation: float 4.5s ease-in-out infinite 5s;
+}
+
+/* Enhanced category tags */
+.category-tag.hosted {
+    background: var(--gradient-tertiary);
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.project-category {
+    margin-bottom: 0.75rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-.scroll-line {
-    width: 2px;
-    height: 30px;
-    background: var(--gradient-primary);
-    border-radius: 2px;
-    animation: scrollAnimation 2s ease-in-out infinite;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 /* ==================== ABOUT SECTION ====================*/
@@ -968,6 +995,10 @@ header .container {
 
 .project-category {
     margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .category-tag {
@@ -1362,21 +1393,26 @@ header .container {
     right: 2rem;
     width: 60px;
     height: 60px;
-    background: var(--gradient-primary);
+    background: var(--card-bg);
+    border: 2px solid var(--accent-primary);
     border-radius: 50%;
     display: none;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--accent-primary);
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: 0 8px 32px var(--shadow-heavy);
+    box-shadow: 0 8px 32px var(--shadow-medium), 0 0 20px rgba(79, 172, 254, 0.3);
+    backdrop-filter: blur(15px);
     transition: var(--transition);
 }
 
 #progress:hover {
     transform: scale(1.1);
+    background: var(--accent-primary);
+    color: white;
+    box-shadow: 0 12px 40px var(--shadow-heavy), 0 0 30px rgba(79, 172, 254, 0.5);
 }
 
 /* ==================== ANIMATIONS ====================*/
@@ -1503,6 +1539,10 @@ header .container {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    
+    .floating-elements {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1563,6 +1603,28 @@ header .container {
         flex-direction: column;
         gap: 0.5rem;
     }
+    
+    .portfolio-filters {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .filter-btn span {
+        display: none;
+    }
+    
+    .filter-btn i {
+        margin: 0;
+    }
+    
+    .filter-btn:first-child span {
+        display: inline;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1589,6 +1651,16 @@ header .container {
     
     .quick-facts {
         grid-template-columns: 1fr;
+    }
+    
+    .portfolio-filters {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
