@@ -234,9 +234,9 @@ function initProgressBars() {
 function initTypingAnimation() {
   const typingElement = document.querySelector(".typing-text");
   const texts = [
-    "Développeur Full Stack",
+    "Développeur Front-end",
     "Étudiant à l'ESGI",
-    "Alternant chez Prium Solutions",
+    "Alternant chez Freelance.com",
     "Passionné de technologie",
   ];
 
